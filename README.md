@@ -1,2 +1,2 @@
-# terraform-labs
-Training terraform
+# Terraform Labs
+*  [VPCs](vpcs/vpc.md)
