@@ -3,7 +3,7 @@ On Amazon AWS, you start by creating your own **Virtual Private Network** to dep
 
 * Every availability zone has it own **public** and **private** subnet
 
-* [Terra form details here](vpcs/vpc-terraform.md)
+* [Terra form details here](vpc-terraform.md)
 
 ## Creating the VPC
 |Public Network|Private Network|availability zone
