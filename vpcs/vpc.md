@@ -1,6 +1,19 @@
 ## How to create private vpc with terra forms
 On Amazon AWS, you start by creating your own **Virtual Private Network** to deploy your instances (servers) / databases
 
+* Every availability zone has it own **public** and **private** subnet
+
+## Creating the VPC
+|Public Network|Private Network|availability zone
+|---|---|---|
+|main-public-1(10.0.1.0/24)| main-private-1 10.0.4.0/24 | eu-west-1a
+|main-public-2(10.0.2.0/24)| main-private-1 10.0.5.0/24 | eu-west-1b
+|main-public-1(10.0.3.0/24)| main-private-1 10.0.6.0/24 | eu-west-1c
+
+>_Instances started in subnet main-public-3 will have IP address 10.0.3.x, and will be lauched in the eu-west-1c availability zone
+
+>_An instance lauched in main-private-1 will have an IP address 10.0.4.x and reside in amazon´s eu-west-1a availability zone
+
 ## Private Subnets ##
 
 |Range|From|To|Description
