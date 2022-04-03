@@ -3,10 +3,17 @@ On Amazon AWS, you start by creating your own **Virtual Private Network** to dep
 
 ## Private Subnets ##
 
-|Range|From|To|
-|----|-----|-------|
-|10.0.0.0/8|10.0.0.0|10.255.255.255|
-|172.16.0.0/12|172.16.0.0|172.31.255.255|
+|Range|From|To|Description
+|----|-----|-------|-------|
+|10.0.0.0/8|10.0.0.0|10.255.255.255| _Use 24 bits to network and 8 to hosts_ (the last group of octet)
+|172.16.0.0/12|172.16.0.0|172.31.255.255|_Use 12 bits to network and 20 to hosts, the second group the octet start in 16 get more 16
+
+## Sample: 172.16.0.0/12
+|1s Octet|2s Octet|3s Octet|4s Octet
+|----|----|----|----|
+|12 networks|| 20 hosts||
+|oooooooo|ooooxxxx|xxxxxxxx|xxxxxxxx|
+|172.16.0.0/12 |172.16.0.0 | 172.31.255.255
 
 ## Class A
 |From|To|
@@ -49,6 +56,7 @@ usin 7 bits the hosts are 128 available
 
 ## Links Utils
 * https://www.iptp.net/pt_PT/iptp-tools/ip-calculator/
+* https://www.ipaddressguide.com/cidr
 
 
 
