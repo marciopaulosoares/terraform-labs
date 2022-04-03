@@ -1,5 +1,5 @@
 ## How to create private vpc with terra forms
-On Amazon AWS, you start by creating your own **Virtual Private Network**_** to deploy your instances (servers) / databases
+On Amazon AWS, you start by creating your own **Virtual Private Network** to deploy your instances (servers) / databases
 
 ## Private Subnets ##
 
@@ -43,10 +43,12 @@ On Amazon AWS, you start by creating your own **Virtual Private Network**_** to 
 usin 7 bits the hosts are 128 available
 2,4,8,16,32,64,128
 
+## About Gatewaty and 
+* **These ips classes are used for a local network**
+* **Gateway are used to connect networks**
 
-**Used to local network **
-
-** Gateway -> connect networks **
+## Links Utils
+* https://www.iptp.net/pt_PT/iptp-tools/ip-calculator/
 
 
 
