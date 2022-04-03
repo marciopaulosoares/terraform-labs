@@ -23,7 +23,30 @@ On Amazon AWS, you start by creating your own **Virtual Private Network**_** to 
 |----|-----|
 |192.168.0.0|192.168.255.255|
 
-Used to local network
+## Using 24bits to network and 8 bits to hosts
+|From|To|
+|----|-----|
+|192.168.0.0|192.168.0.255|
+
+* 255 is broadcast IP
+* 0 is network IP not used
+* 254 hosts is available
+
+
+## Using 25bits to network and 7 bits to hosts
+
+|Name|From|To|
+|----|----|-----|
+|NETWORK A|192.168.0.0|192.168.0.127|
+|NETWORK b|192.168.0.128|192.168.0.255|
+
+usin 7 bits the hosts are 128 available
+2,4,8,16,32,64,128
+
+
+**Used to local network **
+
+** Gateway -> connect networks **
 
 
 
