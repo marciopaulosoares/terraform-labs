@@ -1,2 +1,2 @@
 # Terraform Labs
-*  [VPCs](vpcs/vpc.md)
+*  [VPCs](vpcs/README.md)
